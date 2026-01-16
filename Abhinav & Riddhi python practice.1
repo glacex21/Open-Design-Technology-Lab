@@ -1,0 +1,42 @@
+from machine import Pin
+import time
+led1=Pin(2,Pin.OUT)
+led2=Pin(5,Pin.OUT)
+led3=Pin(21,Pin.OUT)
+led4=Pin(12,Pin.OUT)
+led5=Pin(25,Pin.OUT)
+led6=Pin(32,Pin.OUT)
+buzz=Pin(26,Pin.OUT)
+
+times=100
+counter=0
+
+while(counter<times):
+    led1.on()
+    led4.on()
+    buzz.on()
+    time.sleep(0.06)
+    led1.off()
+    led4.off()
+    buzz.off()
+    time.sleep(0.06)
+    counter=counter+1
+    led2.on()
+    led5.on()
+    buzz.on()
+    time.sleep(0.06)
+    led2.off()
+    led5.off()
+    buzz.off()
+    counter=counter+1
+    led3.on()
+    led6.on()
+    buzz.on()
+    time.sleep(0.06)
+    led3.off()
+    led6.off()
+    buzz.off()
+    time.sleep(0.06)
+    
+    
+    
